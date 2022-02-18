@@ -15,3 +15,20 @@ La tipicizzazione dei dati è altamente richiesta.
 Usare dei loader durante l'attesa delle chiamate al server.
 Extra: Rendere riutilizzabile il componente del modale.
 Extra: Rendere riutlizzabile il componente della tabella.
+
+2. prerequisiti:
+buona conoscenza di redux toolkit
+servizio REST che ritorna un array di oggetti.
+
+Impostare Redux toolkit in modo tale da poter fare il dispatch di una chiamata API.
+Gestire il caso di caricamento, errore e successo tutto all'interno di uno slice.
+Da un componente consumare l'API attraverso Redux gestendo quindi a livello di UI i casi di loading ed errore.
+Mostrare in pagina una proprietà di ogni singolo oggetto risultante.
+
+3. prerequisiti:
+buona conoscenza di redux toolkit
+servizio REST che supporta la paginazione (altrimenti vedi: https://api.instantwebtools.net/v1/passenger?page=0&size=10)
+
+Utilizzando RTK query implementare una tabella con paginazione.
+Disabilitare il bottone per la pagina successiva se raggiunta la massima pagina disponibile, idem per il bottone pagina precedente.
+CSS, Typescript necessari
