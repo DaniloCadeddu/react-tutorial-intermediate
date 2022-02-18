@@ -6,13 +6,15 @@ interface Props<T> {
 
 export const Table = <T,>({ rows, columnsTitles, onClickRow }: Props<T>) => (
   <table>
-    <tr>
-      {columnsTitles.map((title, i) => (
-        <th key={`${title}${i}`} align="center">
-          {title}
-        </th>
-      ))}
-    </tr>
+    <thead>
+      <tr>
+        {columnsTitles.map((title, i) => (
+          <th key={`${title}${i}`} align="center">
+            {title}
+          </th>
+        ))}
+      </tr>
+    </thead>
     <tbody>
       {rows.map((row, i) => (
         <tr key={i}>
